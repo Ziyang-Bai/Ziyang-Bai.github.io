@@ -1,112 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Image Gallery</title>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
 <h1>Image Gallery</h1>
-<div id="gallery">
-<a href="image-1.jpg" target="_blank">image-1.jpg</a><br>
-<a href="image-2.jpg" target="_blank">image-2.jpg</a><br>
-<a href="image-3.jpg" target="_blank">image-3.jpg</a><br>
-<a href="image-4.jpg" target="_blank">image-4.jpg</a><br>
-<a href="image-5.jpg" target="_blank">image-5.jpg</a><br>
-<a href="image-6.jpg" target="_blank">image-6.jpg</a><br>
-<a href="image-7.jpg" target="_blank">image-7.jpg</a><br>
-<a href="image-8.jpg" target="_blank">image-8.jpg</a><br>
-<a href="image-9.jpg" target="_blank">image-9.jpg</a><br>
-<a href="image-10.jpg" target="_blank">image-10.jpg</a><br>
-<a href="image-11.jpg" target="_blank">image-11.jpg</a><br>
-<a href="image-12.jpg" target="_blank">image-12.jpg</a><br>
-<a href="image-13.jpg" target="_blank">image-13.jpg</a><br>
-<a href="image-14.jpg" target="_blank">image-14.jpg</a><br>
-<a href="image-15.jpg" target="_blank">image-15.jpg</a><br>
-<a href="image-16.jpg" target="_blank">image-16.jpg</a><br>
-<a href="image-17.jpg" target="_blank">image-17.jpg</a><br>
-<a href="image-18.jpg" target="_blank">image-18.jpg</a><br>
-<a href="image-19.jpg" target="_blank">image-19.jpg</a><br>
-<a href="image-20.jpg" target="_blank">image-20.jpg</a><br>
-<a href="image-21.jpg" target="_blank">image-21.jpg</a><br>
-<a href="image-22.jpg" target="_blank">image-22.jpg</a><br>
-<a href="image-23.jpg" target="_blank">image-23.jpg</a><br>
-<a href="image-24.jpg" target="_blank">image-24.jpg</a><br>
-<a href="image-25.jpg" target="_blank">image-25.jpg</a><br>
-<a href="image-26.jpg" target="_blank">image-26.jpg</a><br>
-<a href="image-27.jpg" target="_blank">image-27.jpg</a><br>
-<a href="image-28.jpg" target="_blank">image-28.jpg</a><br>
-<a href="image-29.jpg" target="_blank">image-29.jpg</a><br>
-<a href="image-30.jpg" target="_blank">image-30.jpg</a><br>
-<a href="image-31.jpg" target="_blank">image-31.jpg</a><br>
-<a href="image-32.jpg" target="_blank">image-32.jpg</a><br>
-<a href="image-33.jpg" target="_blank">image-33.jpg</a><br>
-<a href="image-34.jpg" target="_blank">image-34.jpg</a><br>
-<a href="image-35.jpg" target="_blank">image-35.jpg</a><br>
-<a href="image-36.jpg" target="_blank">image-36.jpg</a><br>
-<a href="image-37.jpg" target="_blank">image-37.jpg</a><br>
-<a href="image-38.jpg" target="_blank">image-38.jpg</a><br>
-<a href="image-39.jpg" target="_blank">image-39.jpg</a><br>
-<a href="image-40.jpg" target="_blank">image-40.jpg</a><br>
-<a href="image-41.jpg" target="_blank">image-41.jpg</a><br>
-<a href="image-42.jpg" target="_blank">image-42.jpg</a><br>
-<a href="image-43.jpg" target="_blank">image-43.jpg</a><br>
-<a href="image-44.jpg" target="_blank">image-44.jpg</a><br>
-<a href="image-45.jpg" target="_blank">image-45.jpg</a><br>
-<a href="image-46.jpg" target="_blank">image-46.jpg</a><br>
-<a href="image-47.jpg" target="_blank">image-47.jpg</a><br>
-<a href="image-48.jpg" target="_blank">image-48.jpg</a><br>
-<a href="image-49.jpg" target="_blank">image-49.jpg</a><br>
-<a href="image-50.jpg" target="_blank">image-50.jpg</a><br>
-<a href="image-51.jpg" target="_blank">image-51.jpg</a><br>
-<a href="image-52.jpg" target="_blank">image-52.jpg</a><br>
-<a href="image-53.jpg" target="_blank">image-53.jpg</a><br>
-<a href="image-54.jpg" target="_blank">image-54.jpg</a><br>
-<a href="image-55.jpg" target="_blank">image-55.jpg</a><br>
-<a href="image-56.jpg" target="_blank">image-56.jpg</a><br>
-<a href="image-57.jpg" target="_blank">image-57.jpg</a><br>
-<a href="image-58.jpg" target="_blank">image-58.jpg</a><br>
-<a href="image-59.jpg" target="_blank">image-59.jpg</a><br>
-<a href="image-60.jpg" target="_blank">image-60.jpg</a><br>
-<a href="image-61.jpg" target="_blank">image-61.jpg</a><br>
-<a href="image-62.jpg" target="_blank">image-62.jpg</a><br>
-<a href="image-63.jpg" target="_blank">image-63.jpg</a><br>
-<a href="image-64.jpg" target="_blank">image-64.jpg</a><br>
-<a href="image-65.jpg" target="_blank">image-65.jpg</a><br>
-<a href="image-66.jpg" target="_blank">image-66.jpg</a><br>
-<a href="image-67.jpg" target="_blank">image-67.jpg</a><br>
-<a href="image-68.jpg" target="_blank">image-68.jpg</a><br>
-<a href="image-69.jpg" target="_blank">image-69.jpg</a><br>
-<a href="image-70.jpg" target="_blank">image-70.jpg</a><br>
-<a href="image-71.jpg" target="_blank">image-71.jpg</a><br>
-<a href="image-72.jpg" target="_blank">image-72.jpg</a><br>
-<a href="image-73.jpg" target="_blank">image-73.jpg</a><br>
-<a href="image-74.jpg" target="_blank">image-74.jpg</a><br>
-<a href="image-75.jpg" target="_blank">image-75.jpg</a><br>
-<a href="image-76.jpg" target="_blank">image-76.jpg</a><br>
-<a href="image-77.jpg" target="_blank">image-77.jpg</a><br>
-<a href="image-78.jpg" target="_blank">image-78.jpg</a><br>
-<a href="image-79.jpg" target="_blank">image-79.jpg</a><br>
-<a href="image-80.jpg" target="_blank">image-80.jpg</a><br>
-<a href="image-81.jpg" target="_blank">image-81.jpg</a><br>
-<a href="image-82.jpg" target="_blank">image-82.jpg</a><br>
-<a href="image-83.jpg" target="_blank">image-83.jpg</a><br>
-<a href="image-84.jpg" target="_blank">image-84.jpg</a><br>
-<a href="image-85.jpg" target="_blank">image-85.jpg</a><br>
-<a href="image-86.jpg" target="_blank">image-86.jpg</a><br>
-<a href="image-87.jpg" target="_blank">image-87.jpg</a><br>
-<a href="image-88.jpg" target="_blank">image-88.jpg</a><br>
-<a href="image-89.jpg" target="_blank">image-89.jpg</a><br>
-<a href="image-90.jpg" target="_blank">image-90.jpg</a><br>
-<a href="image-91.jpg" target="_blank">image-91.jpg</a><br>
-<a href="image-92.jpg" target="_blank">image-92.jpg</a><br>
-<a href="image-93.jpg" target="_blank">image-93.jpg</a><br>
-<a href="image-94.jpg" target="_blank">image-94.jpg</a><br>
-<a href="image-95.jpg" target="_blank">image-95.jpg</a><br>
-<a href="image-96.jpg" target="_blank">image-96.jpg</a><br>
-<a href="image-97.jpg" target="_blank">image-97.jpg</a><br>
-<a href="image-98.jpg" target="_blank">image-98.jpg</a><br>
-<a href="image-99.jpg" target="_blank">image-99.jpg</a><br>
-<a href="image-100.jpg" target="_blank">image-100.jpg</a><br>
-</div>
+<table>
+    <tr>
+        <td><a href="image-1.jpg" target="_blank">image-1.jpg</a></td>
+        <td><a href="image-2.jpg" target="_blank">image-2.jpg</a></td>
+        <td><a href="image-3.jpg" target="_blank">image-3.jpg</a></td>
+        <td><a href="image-4.jpg" target="_blank">image-4.jpg</a></td>
+    </tr>
+    <tr>
+        <td><a href="image-5.jpg" target="_blank">image-5.jpg</a></td>
+        <td><a href="image-6.jpg" target="_blank">image-6.jpg</a></td>
+        <td><a href="image-7.jpg" target="_blank">image-7.jpg</a></td>
+        <td><a href="image-8.jpg" target="_blank">image-8.jpg</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="image-9.jpg" target="_blank">image-9.jpg</a></td>
+        <td><a href="image-10.jpg" target="_blank">image-10.jpg</a></td>
+        <td><a href="image-11.jpg" target="_blank">image-11.jpg</a></td>
+        <td><a href="image-12.jpg" target="_blank">image-12.jpg</a></td>
+    </tr>
+    <tr>
+        <td><a href="image-13.jpg" target="_blank">image-13.jpg</a></td>
+        <td><a href="image-14.jpg" target="_blank">image-14.jpg</a></td>
+        <td><a href="image-15.jpg" target="_blank">image-15.jpg</a></td>
+        <td><a href="image-16.jpg" target="_blank">image-16.jpg</a></td>
+    </tr>
+
+</table>
+
 </body>
 </html>

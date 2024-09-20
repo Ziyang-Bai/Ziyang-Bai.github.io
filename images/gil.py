@@ -1,4 +1,15 @@
-def generate_image_links(start, end, output_file):
+import os
+
+def generate_image_links_from_directory(directory, output_file, columns=1):
+    # 定义常见图片格式的扩展名
+    valid_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.tiff')
+
+    # 获取目录下所有符合扩展名的图片文件
+    image_files = [f for f in os.listdir(directory) if f.lower().endswith(valid_extensions)]
+
+    # 按照文件名排序
+    image_files.sort()
+
     with open(output_file, 'w') as f:
         f.write('<!DOCTYPE html>\n')
         f.write('<html lang="en">\n')
@@ -11,13 +22,13 @@ def generate_image_links(start, end, output_file):
         f.write('<div id="gallery">\n')
 
         # 循环生成链接
-        for n in range(start, end + 1):
-            filename = f'image-{n}.jpg'
-            f.write(f'<a href="{filename}" target="_blank">{filename}</a><br>\n')
+        for filename in image_files:
+            filepath = os.path.join(directory, filename)
+            f.write(f'<a href="{filepath}" target="_blank">{filename}</a><br>\n')
 
         f.write('</div>\n')
         f.write('</body>\n')
         f.write('</html>\n')
 
-# 使用函数，假设图片从image-1.jpg开始到image-100.jpg结束
-generate_image_links(1, 100, 'gallery.html')
+# 使用函数，假设图片在"images"目录中
+generate_image_links_from_directory('images', 'gallery.html')

@@ -9,12 +9,39 @@
 <meta charset="UTF-8">
 <title>Ziyang-Bai的个人主页</title>
 <bgsound src="dialup.wav" loop="1">
+
+
 </head>
 <script>
-        window.onload = function() {
-            alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
-        };
+    window.onload = function() {
+        var isIE = /*@cc_on!@*/false; // 检测 IE
+        if (!isIE) {
+            var script = document.createElement('script');
+            script.defer = true;
+            script.src = "https://cloud.umami.is/script.js";
+            script.setAttribute('data-website-id', '9da8abf0-769f-484c-868c-d5505d03c889');
+            
+            script.onerror = function() {
+                // 如果加载失败，不做处理
+            };
+
+            document.head.appendChild(script);
+        }
+    };
 </script>
+
+</script>
+
+
+<script>
+    window.onload = function() {
+        var isIE = /*@cc_on!@*/false; // 检测 IE
+        if (isIE) {
+            alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
+        }
+    };
+</script>
+
 <body background="background.gif">
 <header>
 <div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">

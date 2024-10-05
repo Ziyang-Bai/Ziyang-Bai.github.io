@@ -11,6 +11,9 @@
 <bgsound src="dialup.wav" loop="1">
 
 <script>
+	setTimeout(function() {
+                alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
+            }, 15000);
     window.onload = function() {
         var isIE = /*@cc_on!@*/false; // 检测 IE
 
@@ -25,13 +28,7 @@
             };
 
             document.head.appendChild(script);
-        } else {
-            // 延迟 2 秒（2000 毫秒）后显示警告框
-            setTimeout(function() {
-                alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
-            }, 13000);
-        }
-    };
+        }     };
 </script>
 
 <body background="background.gif">

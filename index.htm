@@ -9,11 +9,22 @@
 <meta charset="UTF-8">
 <title>Ziyang-Bai的个人主页</title>
 <bgsound src="dialup.wav" loop="1">
+<script>
+    // 检测是否是 Internet Explorer
+    function isIE() {
+        return window.navigator.userAgent.indexOf('MSIE') !== -1 || window.navigator.userAgent.indexOf('Trident') !== -1;
+    }
+
+    // 如果是 Internet Explorer，则在 15 秒后显示弹窗
+    if (isIE()) {
+        setTimeout(function() {
+            alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
+        }, 15000);
+    }
+</script>
 
 <script>
-	setTimeout(function() {
-                alert("连接到 拨号上网 时出错\n正在连接，通过ZTE ZXDSL 831...\n错误 651：调制解调器（或其他连接设备）报告了一个错误。\n如果您继续收到错误信息，您可以启用日志记录来做分析。\n来自LSP的消息：您的拨号账号已欠费，请及时缴费。现仅可访问赞助商免费网站");
-            }, 15000);
+	
     window.onload = function() {
         var isIE = /*@cc_on!@*/false; // 检测 IE
 
@@ -24,7 +35,7 @@
             script.setAttribute('data-website-id', '9da8abf0-769f-484c-868c-d5505d03c889');
             
             script.onerror = function() {
-                // 如果加载失败，不做处理
+                
             };
 
             document.head.appendChild(script);
